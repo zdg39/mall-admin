@@ -2,6 +2,36 @@
 
 该系统是<<循序渐进 Vue.js 3 前端开发实战>>书中的实战项目。
 
+## 运行程序
+
+```bash
+# 克隆获取源码
+ git clone git@github.com:zdg39/mall-admin.git
+
+# 进入工程根目录
+cd mall-admin
+
+# 安装工程依赖
+$ npm install
+
+# 以开发模式运行，地址为localhost:5173
+npm run dev
+```
+
+## 工程结构
+
+```
+├── public
+└── src
+    ├── assets
+    ├── components
+    │   ├── home
+    │   ├── icons
+    │   └── login
+    ├── router
+    └── tools
+```
+
 ## 组件
 
 - [Vue.js](https://cn.vuejs.org/)<br/>
