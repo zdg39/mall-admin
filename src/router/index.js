@@ -20,7 +20,7 @@ const routes = [
         component: Order,
       },
     ],
-    // redirect: "/home/order/0",
+    redirect: "/home/order/0",
   },
   {
     // 登录页

@@ -44,3 +44,5 @@ npm run dev
   一套为开发者、设计师和产品经理准备的基于 Vue 3.0 的桌面端组件库
 - [Axios](https://github.com/axios/axios)<br/>
   Promise based HTTP client for the browser and node.js
+- [Mock.js](http://mockjs.com/)<br/>
+  生成随机数据，拦截 Ajax 请求
