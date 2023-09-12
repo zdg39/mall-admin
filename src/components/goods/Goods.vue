@@ -60,7 +60,12 @@
 
     <!--表格内容-->
     <div>
-      <el-table :data="goodsData" tooltip-effect="dark" style="width: 100%">
+      <el-table
+        :data="goodsData"
+        tooltip-effect="dark"
+        border
+        style="width: 100%"
+      >
         <el-table-column label="商品" width="100">
           <template #default="scope">
             <div style="text-align: center">

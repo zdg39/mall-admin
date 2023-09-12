@@ -77,6 +77,7 @@
         ref="multipleTable"
         :data="orderList"
         tooltip-effect="dark"
+        border
         style="width: 100%"
         @selection-change="handleSeletionChange"
       >

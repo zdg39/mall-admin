@@ -52,6 +52,8 @@
             </template>
             <el-menu-item index="/home/goods/0">普通商品</el-menu-item>
             <el-menu-item index="/home/goods/1">秒杀商品</el-menu-item>
+            <el-menu-item index="/home/goods/2">今日推荐</el-menu-item>
+            <el-menu-item index="/home/category">商品分类</el-menu-item>
           </el-sub-menu>
         </el-menu-item-group>
       </el-menu>
