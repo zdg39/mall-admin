@@ -170,6 +170,7 @@ export default {
     };
   },
 
+  //组件挂载时获取数据 vue2
   mounted() {
     this.orderList = Mock.getOrderList(this.$route.params.type);
   },

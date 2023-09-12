@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import Login from "../components/login/Login.vue";
 import Home from "../components/home/Home.vue";
 import Order from "../components/order/Order.vue";
+import Goods from "../components/good/Goods.vue";
+import AddGood from "../components/good/AddGood.vue";
 
 import Store from "../tools/Storage.js";
 
@@ -19,8 +21,18 @@ const routes = [
         name: "Order",
         component: Order,
       },
+      {
+        path: "goods/:type", //0-普通商品 1-秒杀商品 2-今日推荐
+        name: "Goods",
+        component: Goods,
+      },
+      {
+        path: "goods/add/:type", //0-普通订单 1-秒杀订单
+        name: "AddGood",
+        component: AddGood,
+      },
     ],
-    redirect: "/home/order/0",
+    // redirect: "/home/order/0",
   },
   {
     // 登录页
