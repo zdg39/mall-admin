@@ -14,19 +14,11 @@
       >
         <el-table-column label="分类id" width="100" prop="id"></el-table-column>
 
-        <el-table-column
-          label="分类名称"
-          width="100"
-          prop="name"
-        ></el-table-column>
+        <el-table-column label="分类名称" prop="name"></el-table-column>
 
-        <el-table-column
-          label="分类负责人"
-          width="100"
-          prop="manager"
-        ></el-table-column>
+        <el-table-column label="分类负责人" prop="manager"></el-table-column>
 
-        <el-table-column label="操作" width="200">
+        <el-table-column label="操作" width="100">
           <template #default="scope">
             <el-button
               type="danger"

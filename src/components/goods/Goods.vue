@@ -66,7 +66,7 @@
         border
         style="width: 100%"
       >
-        <el-table-column label="商品" width="100">
+        <el-table-column label="商品">
           <template #default="scope">
             <div style="text-align: center">
               <el-image

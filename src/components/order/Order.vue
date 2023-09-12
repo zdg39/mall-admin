@@ -127,11 +127,7 @@
           </template>
         </el-table-column>
 
-        <el-table-column
-          label="来源"
-          width="200"
-          prop="source"
-        ></el-table-column>
+        <el-table-column label="来源" prop="source"></el-table-column>
 
         <el-table-column label="操作" width="200">
           <template #default="scope">
