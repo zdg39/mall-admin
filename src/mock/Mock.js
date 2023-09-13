@@ -1,3 +1,4 @@
+import { menuProps } from "element-plus";
 import mockjs from "mockjs";
 
 const Mock = {
@@ -44,6 +45,27 @@ const Mock = {
       );
     }
     return array;
+  },
+
+  //模拟获取图表
+  getChartsData() {
+    let array = [];
+    for (let i = 0; i < 6; i++) {
+      array.push(mockjs.Random.integer(1, 100));
+    }
+    return array;
+  },
+
+  //模拟获取交易数据
+  getTradeData() {
+    return mockjs.mock({
+      allTra: mockjs.Random.integer(10000, 50000),
+      speTra: mockjs.Random.integer(0, 5000),
+      norTra: mockjs.Random.integer(0, 50000),
+      userCount: mockjs.Random.integer(1, 1000),
+      managerCount: mockjs.Random.integer(1, 100),
+      time: mockjs.Random.datetime("yyyy-MM-dd HH:mm:ss"),
+    });
   },
 };
 

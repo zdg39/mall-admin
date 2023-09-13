@@ -36,6 +36,14 @@
         @close="1"
       >
         <el-menu-item-group>
+          <el-menu-item index="/home/dashboard">
+            <template #title>
+              <el-icon><HomeFilled /></el-icon><span>首页</span>
+            </template>
+          </el-menu-item>
+        </el-menu-item-group>
+
+        <el-menu-item-group>
           <el-sub-menu index="1">
             <template #title>
               <el-icon><Shop /></el-icon><span>订单管理</span>
@@ -60,14 +68,9 @@
     </el-aside>
 
     <el-main style="padding: 0">
-      <el-header style="margin: 0; padding: 0; height: 80px">
+      <el-header style="margin: 0; padding: 0; height: 60px">
         <el-container
-          style="
-            background-color: blanchedalmond;
-            margin: 0;
-            padding: 0;
-            height: 80px;
-          "
+          style="background-color: #3a86ff; margin: 0; padding: 0; height: 60px"
         >
           <div style="margin: auto; margin-left: 100px">
             <h1>欢迎您登录后台管理系统</h1>
@@ -104,3 +107,17 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+#container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#top {
+  background-color: #545c64;
+  margin-right: 1px;
+  text-align: center;
+  height: 60px;
+}
+</style>

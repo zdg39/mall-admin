@@ -46,3 +46,9 @@ npm run dev
   Promise based HTTP client for the browser and node.js
 - [Mock.js](http://mockjs.com/)<br/>
   生成随机数据，拦截 Ajax 请求
+- [Echarts](https://echarts.apache.org/zh/index.html)<br/>
+  图表绘制
+
+## 参考链接
+
+- https://gitee.com/jaki/shop-admin

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Login from "../components/login/Login.vue";
 import Home from "../components/home/Home.vue";
+import Dashboard from "../components/home/Dashboard.vue";
 import Order from "../components/order/Order.vue";
 import Goods from "../components/goods/Goods.vue";
 import AddGood from "../components/goods/AddGood.vue";
@@ -17,6 +18,11 @@ const routes = [
     name: "Home",
     component: Home,
     children: [
+      {
+        path: "dashboard",
+        name: "Dashboard",
+        component: Dashboard,
+      },
       {
         path: "order/:type", //0-普通订单 1-秒杀订单
         name: "Order",
@@ -38,7 +44,7 @@ const routes = [
         component: GoodsCategory,
       },
     ],
-    // redirect: "/home/order/0",
+    redirect: "/home/dashboard",
   },
   {
     // 登录页
